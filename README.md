@@ -61,6 +61,8 @@ Evaluated on 200 hand-curated `@AppleSupport` golden examples:
 
 ## 🏗️ System Architecture & LangGraph DAG
 
+![AI Customer Support Agent Architecture Diagram](assets/architecture_diagram.jpg)
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ 1. Intent Classifier Node (LangGraph + Pydantic)            │

@@ -8,6 +8,8 @@
 
 ## 1. Problem Framing
 
+![AI Customer Support Agent Architecture Diagram](architecture_diagram.jpg)
+
 ### What "Good" Means for @AppleSupport
 Customer support on Twitter for a global tech leader like `@AppleSupport` is fundamentally different from open-ended conversational AI. A production agent must meet three non-negotiable criteria:
 1. **Grounding & Historical Fidelity**: Brand responses must strict align with official Apple support workflows (e.g., advising `Settings > Battery > Battery Health & Charging` rather than hallucinating arbitrary reset sequences).
