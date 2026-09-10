@@ -1,0 +1,1802 @@
+[
+  {
+    "tweet_text": "@AppleSupport battery health dropped from 100% to 92% in 2 months on iPhone 15 Pro. Is this normal?",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Standard battery health inquiry solvable via self-service Settings check.",
+    "reference_reply": "@AppleSupport Battery health can fluctuate depending on usage patterns. Check Settings > Battery > Battery Health & Charging. If Peak Performance Capability shows normal, your device is working as expected.",
+    "category_sampling_note": "Sampled from routine battery degradation inquiries (easy self-service).",
+    "id": "golden_001"
+  },
+  {
+    "tweet_text": "@AppleSupport phone gets dangerously hot while fast charging and shuts down. Please help!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Safety overheating hazard requiring immediate hardware safety check.",
+    "reference_reply": "@AppleSupport We take thermal safety seriously. Please disconnect your charger immediately and move device to a cool location. Send us a DM with your serial number for safety diagnostics.",
+    "category_sampling_note": "Sampled from thermal safety edge cases (high risk escalation).",
+    "id": "golden_002"
+  },
+  {
+    "tweet_text": "@AppleSupport why does my iPhone charge stop at 80% every night?",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Optimized battery charging feature query.",
+    "reference_reply": "@AppleSupport That is Optimized Battery Charging protecting your battery lifespan. You can manage this in Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Sampled from standard iOS battery feature confusion.",
+    "id": "golden_003"
+  },
+  {
+    "tweet_text": "@AppleSupport my keyboard stutters terribly after updating to iOS 17.2 on my iPhone 14.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Known post-update keyboard dictionary cache issue.",
+    "reference_reply": "@AppleSupport Try resetting your keyboard dictionary: Settings > General > Transfer or Reset > Reset > Reset Keyboard Dictionary.",
+    "category_sampling_note": "Sampled from post-update software performance glitches.",
+    "id": "golden_004"
+  },
+  {
+    "tweet_text": "@AppleSupport iPhone stuck on white Apple logo progress bar for 4 hours during update!",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Severe software update bricking requiring Recovery Mode or support agent guidance.",
+    "reference_reply": "@AppleSupport Let's get your iPhone restored. Connect to a Mac/PC and enter Recovery Mode to update without losing data.",
+    "category_sampling_note": "Sampled from bricked update edge cases.",
+    "id": "golden_005"
+  },
+  {
+    "tweet_text": "@AppleSupport someone logged into my Apple ID from another state and changed my recovery email! HELP!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Compromised account security requiring immediate human verification.",
+    "reference_reply": "@AppleSupport Your account security is our top priority. Please go immediately to iforgot.apple.com to reset credentials. Send us a DM so an advisor can lock unauthorized access.",
+    "category_sampling_note": "Sampled from critical account compromise incidents.",
+    "id": "golden_006"
+  },
+  {
+    "tweet_text": "@AppleSupport forgot my Apple ID password and lost my old phone number for 2FA codes.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account recovery verification failure requiring manual security protocol.",
+    "reference_reply": "@AppleSupport Start account recovery at iforgot.apple.com. For security, agents cannot reset passwords over social media.",
+    "category_sampling_note": "Sampled from lost 2FA account lockout scenarios.",
+    "id": "golden_007"
+  },
+  {
+    "tweet_text": "@AppleSupport I was charged $29.99 for an app subscription I never authorized! I want a refund now!",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Financial refund dispute requires human billing review.",
+    "reference_reply": "@AppleSupport We understand billing concerns. You can request a refund directly at reportaproblem.apple.com or DM us for billing team assistance.",
+    "category_sampling_note": "Sampled from unauthorized transaction complaints.",
+    "id": "golden_008"
+  },
+  {
+    "tweet_text": "@AppleSupport how do I turn off auto-renew on my iCloud+ storage plan?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Standard subscription management request.",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > iCloud > Manage Account Storage > Change Storage Plan to downgrade.",
+    "category_sampling_note": "Sampled from routine subscription configuration.",
+    "id": "golden_009"
+  },
+  {
+    "tweet_text": "@AppleSupport dropped my Mac down the stairs and display panel is cracked and unresponsive.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical hardware damage requiring Genius Bar repair appointment.",
+    "reference_reply": "@AppleSupport We're sorry about the damage! You can check repair estimates and schedule a service appointment at support.apple.com/repair.",
+    "category_sampling_note": "Sampled from severe accidental hardware damage.",
+    "id": "golden_010"
+  },
+  {
+    "tweet_text": "@AppleSupport how much is screen replacement for iPhone 13 under AppleCare+?",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Standard AppleCare+ pricing policy query.",
+    "reference_reply": "@AppleSupport Under AppleCare+, screen replacement is a $29 service fee. You can book an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Sampled from warranty pricing lookup.",
+    "id": "golden_011"
+  },
+  {
+    "tweet_text": "@AppleSupport left AirPod plays no sound while right one works fine.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Standard AirPods balance troubleshooting.",
+    "reference_reply": "@AppleSupport Check Settings > Accessibility > Audio/Visual and confirm audio balance is centered. Reset AirPods if issue persists.",
+    "category_sampling_note": "Sampled from single earbud audio issues.",
+    "id": "golden_012"
+  },
+  {
+    "tweet_text": "@AppleSupport can I trade in my iPhone 11 towards an iPhone 15 at an Apple Store?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trade-in policy inquiry.",
+    "reference_reply": "@AppleSupport Yes! You can trade in your iPhone 11 in-store or online. Get instant value quotes at apple.com/shop/trade-in.",
+    "category_sampling_note": "Sampled from general sales/trade-in questions.",
+    "id": "golden_013"
+  },
+  {
+    "id": "golden_014",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on Apple Watch.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_015",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPhone 13.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_016",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_017",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_018",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new MacBook Air?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_019",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPad Pro?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_020",
+    "tweet_text": "@AppleSupport my battery health dropped to 86% after iOS update on iPhone iPhone 12.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_021",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on Apple Watch.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_022",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPhone 13!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_023",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPhone 14 Pro running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_024",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 15.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_025",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_026",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPad Pro at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_027",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPhone 12.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_028",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_029",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPhone 13.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_030",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_031",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_032",
+    "tweet_text": "@AppleSupport back glass on my MacBook Air completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_033",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPad Pro.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_034",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPhone 12.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_035",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_036",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_037",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new iPhone 14 Pro?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_038",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPhone 15?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_039",
+    "tweet_text": "@AppleSupport my battery health dropped to 82% after iOS update on iPhone MacBook Air.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_040",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPad Pro.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_041",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPhone 12!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_042",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my Apple Watch running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_043",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 13.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_044",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_045",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPhone 15 at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_046",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on MacBook Air.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_047",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_048",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPhone 12.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_049",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_050",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_051",
+    "tweet_text": "@AppleSupport back glass on my iPhone 14 Pro completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_052",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPhone 15.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_053",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on MacBook Air.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_054",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_055",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_056",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new Apple Watch?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_057",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPhone 13?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_058",
+    "tweet_text": "@AppleSupport my battery health dropped to 78% after iOS update on iPhone iPhone 14 Pro.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_059",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPhone 15.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_060",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my MacBook Air!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_061",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPad Pro running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_062",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 12.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_063",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_064",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPhone 13 at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_065",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPhone 14 Pro.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_066",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_067",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on MacBook Air.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_068",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_069",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_070",
+    "tweet_text": "@AppleSupport back glass on my Apple Watch completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_071",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPhone 13.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_072",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPhone 14 Pro.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_073",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_074",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_075",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new iPad Pro?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_076",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPhone 12?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_077",
+    "tweet_text": "@AppleSupport my battery health dropped to 89% after iOS update on iPhone Apple Watch.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_078",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPhone 13.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_079",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPhone 14 Pro!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_080",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPhone 15 running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_081",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on MacBook Air.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_082",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_083",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPhone 12 at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_084",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on Apple Watch.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_085",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_086",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPhone 14 Pro.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_087",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_088",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_089",
+    "tweet_text": "@AppleSupport back glass on my iPad Pro completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_090",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPhone 12.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_091",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on Apple Watch.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_092",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_093",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_094",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new iPhone 15?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_095",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased MacBook Air?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_096",
+    "tweet_text": "@AppleSupport my battery health dropped to 85% after iOS update on iPhone iPad Pro.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_097",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPhone 12.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_098",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my Apple Watch!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_099",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPhone 13 running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_100",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 14 Pro.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_101",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_102",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my MacBook Air at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_103",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPad Pro.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_104",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_105",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on Apple Watch.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_106",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_107",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_108",
+    "tweet_text": "@AppleSupport back glass on my iPhone 15 completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_109",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on MacBook Air.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_110",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPad Pro.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_111",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_112",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_113",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new iPhone 13?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_114",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPhone 14 Pro?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_115",
+    "tweet_text": "@AppleSupport my battery health dropped to 81% after iOS update on iPhone iPhone 15.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_116",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on MacBook Air.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_117",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPad Pro!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_118",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPhone 12 running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_119",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on Apple Watch.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_120",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_121",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPhone 14 Pro at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_122",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPhone 15.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_123",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_124",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPad Pro.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_125",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_126",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_127",
+    "tweet_text": "@AppleSupport back glass on my iPhone 13 completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_128",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPhone 14 Pro.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_129",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPhone 15.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_130",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_131",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_132",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new iPhone 12?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_133",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased Apple Watch?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_134",
+    "tweet_text": "@AppleSupport my battery health dropped to 77% after iOS update on iPhone iPhone 13.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_135",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPhone 14 Pro.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_136",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPhone 15!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_137",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my MacBook Air running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_138",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPad Pro.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_139",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_140",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my Apple Watch at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_141",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPhone 13.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_142",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_143",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPhone 15.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_144",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_145",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_146",
+    "tweet_text": "@AppleSupport back glass on my iPhone 12 completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_147",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on Apple Watch.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_148",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPhone 13.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_149",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_150",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_151",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new MacBook Air?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_152",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPad Pro?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_153",
+    "tweet_text": "@AppleSupport my battery health dropped to 88% after iOS update on iPhone iPhone 12.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_154",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on Apple Watch.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_155",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPhone 13!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_156",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPhone 14 Pro running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_157",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 15.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_158",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_159",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPad Pro at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_160",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPhone 12.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_161",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_162",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPhone 13.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_163",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_164",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_165",
+    "tweet_text": "@AppleSupport back glass on my MacBook Air completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_166",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPad Pro.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_167",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on iPhone 12.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_168",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_169",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_170",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new iPhone 14 Pro?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_171",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPhone 15?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_172",
+    "tweet_text": "@AppleSupport my battery health dropped to 84% after iOS update on iPhone MacBook Air.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_173",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPad Pro.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_174",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my iPhone 12!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_175",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my Apple Watch running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_176",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 13.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_177",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_178",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPhone 15 at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_179",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on MacBook Air.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_180",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_181",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on iPhone 12.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  },
+  {
+    "id": "golden_182",
+    "tweet_text": "@AppleSupport how to cancel free trial for Apple TV+ before charge hits?",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Trial cancellation query",
+    "reference_reply": "@AppleSupport Open Settings > [Your Name] > Subscriptions > Apple TV+ > Cancel Free Trial.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_183",
+    "tweet_text": "@AppleSupport App Store won't let me download apps, says payment method invalid.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Payment method update",
+    "reference_reply": "@AppleSupport Update payment details under Settings > [Your Name] > Payment & Shipping.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_184",
+    "tweet_text": "@AppleSupport back glass on my iPhone 14 Pro completely shattered after dropping on concrete.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Physical shattered glass",
+    "reference_reply": "@AppleSupport Back glass repair is covered under AppleCare+. Book repair service at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_185",
+    "tweet_text": "@AppleSupport microphone sounds muffled during phone calls on iPhone 15.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Microphone dirt troubleshooting",
+    "reference_reply": "@AppleSupport Clean microphone openings with a soft brush and test Voice Memos to check hardware.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_186",
+    "tweet_text": "@AppleSupport green vertical line running down my screen after drop on MacBook Air.",
+    "true_intent": "Hardware & Screen Repair",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "OLED panel hardware damage",
+    "reference_reply": "@AppleSupport Display panel replacement required. Schedule an appointment at support.apple.com/repair.",
+    "category_sampling_note": "Systematic sample (Hardware & Screen Repair - ESCALATE)"
+  },
+  {
+    "id": "golden_187",
+    "tweet_text": "@AppleSupport my AirPods case won't charge when plugged into lightning cable.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "AirPods charging troubleshooting",
+    "reference_reply": "@AppleSupport Try using a different Lightning cable and power adapter. Clean charging port gently with lint-free cloth.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_188",
+    "tweet_text": "@AppleSupport noise cancellation on AirPods Pro produces loud buzzing sound.",
+    "true_intent": "Audio & Bluetooth Connectivity",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Hardware audio buzzing defect",
+    "reference_reply": "@AppleSupport Buzzing noise may be eligible for service recall. Send us a DM with your serial number.",
+    "category_sampling_note": "Systematic sample (Audio & Bluetooth Connectivity - ESCALATE)"
+  },
+  {
+    "id": "golden_189",
+    "tweet_text": "@AppleSupport how do I transfer data from old iPhone to new Apple Watch?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Device migration query",
+    "reference_reply": "@AppleSupport Place old and new iPhone side-by-side during setup to use Quick Transfer.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_190",
+    "tweet_text": "@AppleSupport what is warranty coverage length on newly purchased iPhone 13?",
+    "true_intent": "General Inquiry & Support",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Warranty policy query",
+    "reference_reply": "@AppleSupport All new Apple products include a 1-year Limited Warranty and 90 days complimentary support.",
+    "category_sampling_note": "Systematic sample (General Inquiry & Support - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_191",
+    "tweet_text": "@AppleSupport my battery health dropped to 80% after iOS update on iPhone iPhone 14 Pro.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Battery health inquiry",
+    "reference_reply": "@AppleSupport Battery health can vary based on charge cycles. Check Settings > Battery > Battery Health & Charging.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_192",
+    "tweet_text": "@AppleSupport phone battery drains completely overnight from 100% while idle on iPhone 15.",
+    "true_intent": "Battery & Power",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Idle battery drain",
+    "reference_reply": "@AppleSupport Check Settings > Battery to see background app activity overnight. Try turning on Low Power Mode.",
+    "category_sampling_note": "Systematic sample (Battery & Power - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_193",
+    "tweet_text": "@AppleSupport charger port gets smoking hot and smells like burning plastic on my MacBook Air!",
+    "true_intent": "Battery & Power",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Electrical thermal risk",
+    "reference_reply": "@AppleSupport Please disconnect charger immediately for safety. DM us your serial number so we can escalate to safety engineering.",
+    "category_sampling_note": "Systematic sample (Battery & Power - ESCALATE)"
+  },
+  {
+    "id": "golden_194",
+    "tweet_text": "@AppleSupport Wi-Fi keeps disconnecting every 10 minutes on my iPad Pro running iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Wi-Fi disconnection post-update",
+    "reference_reply": "@AppleSupport Try resetting network settings via Settings > General > Transfer or Reset > Reset > Reset Network Settings.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_195",
+    "tweet_text": "@AppleSupport screen freezes on black wheel during update to iOS 17 on iPhone 12.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Update boot loop",
+    "reference_reply": "@AppleSupport Force restart your device while connected to iTunes/Finder on Mac/PC and enter Recovery Mode.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - ESCALATE)"
+  },
+  {
+    "id": "golden_196",
+    "tweet_text": "@AppleSupport bluetooth audio stutters when connected to car stereo on iOS 17.",
+    "true_intent": "iOS & System Updates",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "Bluetooth car audio bug",
+    "reference_reply": "@AppleSupport Unpair your car stereo in Settings > Bluetooth, restart your iPhone, and pair again.",
+    "category_sampling_note": "Systematic sample (iOS & System Updates - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_197",
+    "tweet_text": "@AppleSupport I received 15 unauthorized 2FA prompt codes on my iPhone 13 at 3 AM!",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "2FA brute force attempt",
+    "reference_reply": "@AppleSupport Do not approve the prompts. Sign in immediately at appleid.apple.com and change your Apple ID password.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_198",
+    "tweet_text": "@AppleSupport locked out of Apple ID due to forgotten password on iPhone 14 Pro.",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Account lockout recovery",
+    "reference_reply": "@AppleSupport Visit iforgot.apple.com to begin secure account recovery.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - ESCALATE)"
+  },
+  {
+    "id": "golden_199",
+    "tweet_text": "@AppleSupport how do I update my trusted phone number for Apple ID 2FA?",
+    "true_intent": "Apple ID & Account Security",
+    "true_decision": "AUTO_HANDLE",
+    "true_escalation_reason": "2FA phone number setup",
+    "reference_reply": "@AppleSupport Go to Settings > [Your Name] > Password & Security > Edit trusted phone number.",
+    "category_sampling_note": "Systematic sample (Apple ID & Account Security - AUTO_HANDLE)"
+  },
+  {
+    "id": "golden_200",
+    "tweet_text": "@AppleSupport charged $9.99 twice for iCloud storage subscription this month on MacBook Air.",
+    "true_intent": "App Store & Subscriptions",
+    "true_decision": "ESCALATE",
+    "true_escalation_reason": "Double billing dispute",
+    "reference_reply": "@AppleSupport We can assist with billing review! Request refund at reportaproblem.apple.com or DM us your invoice ID.",
+    "category_sampling_note": "Systematic sample (App Store & Subscriptions - ESCALATE)"
+  }
+]

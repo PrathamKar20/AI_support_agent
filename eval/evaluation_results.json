@@ -1,0 +1,47 @@
+{
+  "golden_set_size": 200,
+  "results": [
+    {
+      "system_name": "Baseline 0 (Trivial)",
+      "intent_accuracy": 59.0,
+      "escalation_precision": 100.0,
+      "escalation_recall": 1.18,
+      "escalation_f1": 2.33,
+      "avg_grounding_score": 2.56,
+      "avg_tone_score": 5.0,
+      "avg_composite_judge_score": 3.52,
+      "avg_rouge_l": 0.154,
+      "avg_latency_ms": 0.01
+    },
+    {
+      "system_name": "Baseline 1 (Simple RAG)",
+      "intent_accuracy": 10.5,
+      "escalation_precision": 50.0,
+      "escalation_recall": 1.18,
+      "escalation_f1": 2.3,
+      "avg_grounding_score": 3.29,
+      "avg_tone_score": 4.9,
+      "avg_composite_judge_score": 3.78,
+      "avg_rouge_l": 0.2612,
+      "avg_latency_ms": 26.29
+    },
+    {
+      "system_name": "Proposed System (LangGraph + RAG)",
+      "intent_accuracy": 63.5,
+      "escalation_precision": 62.5,
+      "escalation_recall": 41.18,
+      "escalation_f1": 49.65,
+      "avg_grounding_score": 3.29,
+      "avg_tone_score": 4.9,
+      "avg_composite_judge_score": 3.86,
+      "avg_rouge_l": 0.2612,
+      "avg_latency_ms": 34.04
+    }
+  ],
+  "human_judge_agreement": {
+    "sample_size": 50,
+    "cohens_kappa": 0.898,
+    "percentage_agreement": 98.0,
+    "interpretation": "Substantial / Almost Perfect Agreement (Kappa > 0.80)"
+  }
+}
