@@ -144,3 +144,7 @@ Read the complete 6-page comprehensive report in [`report/REPORT.md`](file:///c:
 
 ## Production Release v1.0
 Ready for deployment.
+
+
+### September 11, 2026
+- Initial research on customer support intent taxonomy and LangGraph architecture.
