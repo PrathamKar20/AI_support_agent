@@ -148,3 +148,7 @@ Ready for deployment.
 
 ### September 11, 2026
 - Initial research on customer support intent taxonomy and LangGraph architecture.
+
+
+### September 12, 2026
+- Evaluation dataset setup and golden set generation schema definition.
