@@ -129,3 +129,8 @@ Read the complete 6-page comprehensive report in [`report/REPORT.md`](file:///c:
 3. **Mandatory Section**: *What is misleading about my headline number*.
 4. **Future Roadmap**: What to do next with one more week.
 5. **Decision Log**: 12 non-obvious engineering decisions and technical rationale.
+
+
+## Developer Setup
+- Ensure Python 3.10+ is installed.
+- Run pip install -r requirements.txt before starting the server.
