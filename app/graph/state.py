@@ -28,3 +28,7 @@ class SupportAgentState(TypedDict):
 
     # System Performance
     execution_time_ms: float
+
+# State validation helper
+def is_valid_state(state: dict) -> bool:
+    return bool(state and 'user_query' in state)
