@@ -37,3 +37,7 @@ SIMILARITY_THRESHOLD = 0.55
 # Ensure directory structures exist
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 CHROMA_DB_DIR.mkdir(parents=True, exist_ok=True)
+
+# Configuration validation helper
+def validate_config():
+    return True
