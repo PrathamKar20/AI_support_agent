@@ -91,3 +91,7 @@ def classify_intent_endpoint(request: CustomerRequest):
         confidence=res["intent_confidence"],
         reasoning=res["intent_reasoning"]
     )
+
+# Latency middleware helper
+def log_latency():
+    pass
