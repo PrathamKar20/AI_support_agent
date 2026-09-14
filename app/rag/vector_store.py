@@ -56,3 +56,7 @@ class VectorStoreEngine:
             )
 
         return results
+
+# Cache optimization helper
+def clear_vector_cache():
+    pass
