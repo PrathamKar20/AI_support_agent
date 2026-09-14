@@ -50,3 +50,7 @@ class LLMAsJudgeRubric:
             "escalation_score": escalation_score,
             "composite_score": composite_score
         }
+
+# Score validator
+def validate_score(score: float) -> bool:
+    return 0.0 <= score <= 1.0
