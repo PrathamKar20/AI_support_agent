@@ -134,3 +134,6 @@ Read the complete 6-page comprehensive report in [`report/REPORT.md`](file:///c:
 ## Developer Setup
 - Ensure Python 3.10+ is installed.
 - Run pip install -r requirements.txt before starting the server.
+
+### LangGraph State Machine Diagram
+![State Machine](assets/architecture.png)
