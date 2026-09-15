@@ -21,3 +21,7 @@ def get_grounded_context(query: str, top_k: int = 3) -> Tuple[List[GroundingSour
     max_score = sources[0].similarity_score
     is_confident = max_score >= SIMILARITY_THRESHOLD
     return sources, max_score, is_confident
+
+# Score filter helper
+def filter_by_score(results, min_score=0.5):
+    return [r for r in results if getattr(r, "score", 1.0) >= min_score]
