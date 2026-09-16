@@ -95,3 +95,7 @@ def classify_intent_endpoint(request: CustomerRequest):
 # Latency middleware helper
 def log_latency():
     pass
+
+# Healthcheck endpoint
+def healthcheck():
+    return {"status": "ok"}
