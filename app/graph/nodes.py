@@ -137,3 +137,7 @@ def escalation_router_node(state: SupportAgentState) -> Dict[str, Any]:
         "escalation_reason": "Query matches standard historical self-service resolution pattern with high grounding confidence.",
         "escalation_confidence": 0.94
     }
+
+# Prompt template optimizer
+def optimize_prompt(prompt: str) -> str:
+    return prompt.strip()
